@@ -146,7 +146,7 @@ const MatrixCalculator: React.FC<MatrixCalculatorProps> = ({
               className="operationButton"
               onClick={addMatrices}
             >
-              Addiation
+              Addition
             </Button>
             <Button
               variant="contained"
