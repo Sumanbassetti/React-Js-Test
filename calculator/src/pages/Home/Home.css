@@ -1,0 +1,10 @@
+.calculator-card {
+  margin: auto;
+  margin-top: 2rem;
+  padding: 2rem;
+  min-height: 5rem;
+}
+.card-header .MuiCardHeader-title {
+  text-align: center;
+  width: 100%;
+}

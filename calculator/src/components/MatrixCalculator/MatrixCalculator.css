@@ -1,0 +1,22 @@
+.matrix-table {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.operation-box {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-label {
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.operationButton {
+    min-width: 3rem;
+    width: fit-content;
+}
