@@ -1,6 +1,7 @@
 import React from "react";
 import { TextField } from "@mui/material";
 import "./InputField.css";
+import { Constants } from "../../utils/Constant";
 interface InputFieldProps {
   label: string;
   name: string;
@@ -33,7 +34,7 @@ const InputField: React.FC<InputFieldProps> = ({
       onChange={onChange}
       variant="outlined"
       className="input-field"
-      inputProps={{ min: 1,max:99 }}
+      inputProps={{ min: Constants.MinmumDimension,max:Constants.MaximumDimension }}
       onKeyDown={handleOnKeyDown}
     />
   );
