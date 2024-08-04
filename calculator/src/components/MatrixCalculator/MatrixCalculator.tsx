@@ -4,7 +4,7 @@ import MatrixTable from "../Matrix Table/MatrixTable";
 import { OperationType } from "../../utils/metaData";
 import { Add, Close, Remove } from "@mui/icons-material";
 import "./MatrixCalculator.css";
-import { Constant } from "../../utils/Constant";
+import { Constants } from "../../utils/Constant";
 import SnackBar from "../SnackBar/SnackBar";
 
 //For props of this component
@@ -71,7 +71,7 @@ const MatrixCalculator: React.FC<MatrixCalculatorProps> = ({
     if (matrixA[0].length !== matrixB.length) {
       // Open snackbar to notify the user of the error
       setSnackbarOpen(true);
-      setSnackbarMessage(Constant.MultiplicationErrorMsg);
+      setSnackbarMessage(Constants.MultiplicationErrorMsg);
       return;
     }
 

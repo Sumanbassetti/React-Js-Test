@@ -11,14 +11,13 @@ const MatrixTable: React.FC<MatrixTableProps> = ({
   isDisableCell,
   setTable,
 }) => {
-
-/**
- * For change the matrix cell value 
- * @param {React.ChangeEvent<HTMLInputElement>} event The input value change event
- * @param {number} rowIndex The index of the row
- * @param {number} colIndex The index of the column
- */
-const handleCellChange = (
+  /**
+   * For change the matrix cell value
+   * @param {React.ChangeEvent<HTMLInputElement>} event The input value change event
+   * @param {number} rowIndex The index of the row
+   * @param {number} colIndex The index of the column
+   */
+  const handleCellChange = (
     event: React.ChangeEvent<HTMLInputElement>,
     rowIndex: number,
     colIndex: number
@@ -26,7 +25,9 @@ const handleCellChange = (
     const newValue = Number(event.target.value);
     const newTable = table.map((row, cuurentRowIndex) =>
       row.map((cell, cuurentColIndex) =>
-        cuurentRowIndex === rowIndex && cuurentColIndex === colIndex ? newValue : cell
+        cuurentRowIndex === rowIndex && cuurentColIndex === colIndex
+          ? newValue
+          : cell
       )
     );
     setTable(newTable);
